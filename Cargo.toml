@@ -1,0 +1,14 @@
+[workspace]
+members = ["merged_derive", "."]
+resolver = "2"
+
+[package]
+name = "merged_macro"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+expand = "0.3.0"
+merged_derive = { path = "merged_derive" }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
